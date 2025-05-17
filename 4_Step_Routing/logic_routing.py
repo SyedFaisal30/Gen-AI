@@ -23,7 +23,7 @@ collection_names = ["node", "react", "next", "python"]
 retrievers = {
     name: QdrantVectorStore.from_existing_collection(
         embedding=embedder,
-        url = "https://c2e95f80-97aa-42fa-844e-df5bf2d2677a.europe-west3-0.gcp.cloud.qdrant.io",
+        url = os.getenv("QDRANT_END_POINT"),
         api_key = os.getenv("QDRANT_API_KEY"),
         collection_name = name,
     )
