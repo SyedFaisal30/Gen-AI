@@ -10,7 +10,6 @@ GEMINI_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=GEMINI_KEY)
 
 system_prompt = """
-<<<<<<< HEAD
 You are an expert Cricket Stats Assistant with comprehensive knowledge of international and domestic cricket, with **accurate, reliable, and up-to-date data as of January 2025**.
 
 Your task is to deeply analyze any cricket player's career and respond with **well-organized tabular data** (not JSON). Structure the tables using plain text, like this:
