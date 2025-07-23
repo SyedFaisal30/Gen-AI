@@ -13,10 +13,10 @@ from langgraph.prebuilt import ToolNode, tools_condition
 
 load_dotenv()
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = os.getenv("GOOGLE_API_KEY")
 MONGODB_URI = os.getenv("MONGODB_URI")
 
-config = {"configurable": {"thread_id": "1"}}
+config = {"configurable": {"thread_id": "3"}}
 
 @tool()
 def human_assistance_tool(query: str):

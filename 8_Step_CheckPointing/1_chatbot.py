@@ -65,7 +65,7 @@ MONGODB_URI = os.getenv("MONGODB_URI")
 
 config = {
     "configurable": {
-        "thread_id": str(uuid.uuid4()),  # ensures clean session
+        "thread_id": "3",  # ensures clean session
         "graph": "chatbot-graph"         # REQUIRED for MongoDBSaver to work correctly
     }
 }
